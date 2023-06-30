@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'petit-projet';
+  shapeNames = ['Shape 1', 'Shape 2'];
+  newName = '';
+
+  addName() {
+    this.shapeNames.push(this.newName);
+  }
+
 }
